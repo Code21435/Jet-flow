@@ -1,3 +1,20 @@
+# Jetflow MEDIA Architecture
+
+Jetflow MEDIA is a B2B SaaS and service-layer web application built specifically for Part 135 charter operators and yacht management firms. 
+
+### The Problem It Solves
+Traditional aviation and luxury maritime marketing generates generic "awareness," resulting in a high volume of unstructured, low-intent inquiries. This creates massive downstream pressure on operations and captains who have to manually shape leads into actionable briefs. 
+
+### The Solution
+This application acts as a structured demand system. It actively pre-qualifies traffic, sets firm operational expectations (fleet sizing, routing, budget), and forces inquiries into a structured format. 
+
+### Technical Specifications
+- **Framework:** React 18, utilizing Vite for high-performance builds and HMR.
+- **Routing:** React Router DOM for seamless, intent-driven client-side navigation.
+- **Styling Architecture:** Fully custom, responsive CSS variable system. Strictly avoids generic utility frameworks (like Tailwind) to ensure a bespoke, high-end "wealth management" aesthetic.
+- **Responsiveness:** Fluid grid and flexbox methodologies ensuring consistent UI scaling across mobile, tablet, and ultra-wide executive displays.
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
