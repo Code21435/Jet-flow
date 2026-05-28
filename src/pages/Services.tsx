@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 const Services = () => {
   return (
-    <div>
+    <div className="page-content">
       {/* Section 1 — Page hero */}
       <section className="section" style={{ paddingBottom: '60px' }}>
         <div className="container text-center" style={{ maxWidth: '800px' }}>

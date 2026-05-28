@@ -1,7 +1,7 @@
 
 const Contact = () => {
   return (
-    <div>
+    <div className="page-content">
       {/* Section 1 — Page intro */}
       <section className="section" style={{ paddingBottom: '40px' }}>
         <div className="container">

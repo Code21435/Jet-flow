@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const HowItWorks = () => {
   return (
-    <div>
+    <div className="page-content">
       {/* Section 1 — Process overview */}
       <section className="section">
         <div className="container text-center" style={{ maxWidth: '800px', marginBottom: '80px' }}>

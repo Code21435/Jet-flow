@@ -3,7 +3,7 @@ import { TrendingUp, Clock, CalendarCheck } from 'lucide-react';
 
 const Results = () => {
   return (
-    <div>
+    <div className="page-content">
       {/* Section 1 — Hero */}
       <section className="section-navy" style={{
         position: 'relative',

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <div>
+    <div className="page-content">
       {/* Section 1 — Founder story */}
       <section className="section">
         <div className="container grid-2-services">

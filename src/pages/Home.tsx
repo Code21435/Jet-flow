@@ -4,43 +4,64 @@ import { CalendarX, Users, TrendingDown, CheckCircle, XCircle, ArrowRight } from
 const Home = () => {
   return (
     <div>
-      {/* Section 2 — Hero */}
-      <section className="section-navy" style={{
-        position: 'relative',
-        padding: '120px 5%',
-        minHeight: '80vh',
-        display: 'flex',
-        alignItems: 'center'
-      }}>
-        {/* Placeholder for background image */}
-        <div style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          backgroundImage: 'url(/hero.png)', // We will update this with actual image path
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          opacity: 0.3,
-          zIndex: 0
-        }}></div>
-        
-        <div className="container" style={{ position: 'relative', zIndex: 1, maxWidth: '800px', margin: '0' }}>
-          <div className="label amber-text" style={{ marginBottom: '20px' }}>For Private Aviation Operators</div>
-          <h1 className="hero-headline">Stop Chasing Bookings. Start Building Demand That Arrives.</h1>
-          <p style={{ fontSize: '20px', marginBottom: '40px', maxWidth: '600px' }}>
-            Jetflow MEDIA builds structured inbound demand systems for executive charter operators — so your pipeline fills predictably, not reactively.
+      {/* Hero Section */}
+      <section className="hero-section">
+        {/* Background Image */}
+        <div className="hero-image-container">
+          <img
+            src="/hero-jet.png"
+            alt="Private business jet on tarmac"
+            className="hero-bg-image"
+          />
+        </div>
+
+        {/* Overlay */}
+        <div className="hero-overlay" />
+
+        {/* Hero Content */}
+        <div className="hero-content">
+          <div className="hero-label">
+            INBOUND PIPELINE ARCHITECTURE
+          </div>
+
+          <h1 className="hero-headline">
+            Demand, Engineered.<br />
+            Pipeline, Predictable.<br />
+            Growth, Compounding.
+          </h1>
+
+          <p className="hero-subtext">
+            Inbound demand infrastructure for executive charter operators —
+            built to replace broker dependency with direct-client revenue that scales.
           </p>
-          
-          <div className="btn-group" style={{ display: 'flex', gap: '20px', alignItems: 'center', marginBottom: '30px' }}>
+
+          <div className="hero-actions">
             <Link to="/contact" className="btn btn-primary">Request a Strategy Briefing</Link>
             <Link to="/how-it-works" className="btn btn-ghost">See How It Works</Link>
           </div>
-          
-          <div style={{ fontSize: '14px', color: 'rgba(255,255,255,0.6)' }}>
-            Designed for operators with 2–10 aircraft. Not for general aviation.
+
+          <div className="hero-trust-strip">
+            <div className="hero-trust-item">
+              <span className="hero-trust-value">47%</span>
+              <span className="hero-trust-label">Avg Increase in<br />Qualified Inbound</span>
+            </div>
+            <div className="hero-trust-divider" />
+            <div className="hero-trust-item">
+              <span className="hero-trust-value">60–90</span>
+              <span className="hero-trust-label">Day<br />Deployment</span>
+            </div>
+            <div className="hero-trust-divider" />
+            <div className="hero-trust-item">
+              <span className="hero-trust-value">2–10</span>
+              <span className="hero-trust-label">Aircraft<br />Operations</span>
+            </div>
           </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="hero-scroll-indicator">
+          <span>Scroll</span>
+          <div className="hero-scroll-line" />
         </div>
       </section>
 
@@ -49,7 +70,7 @@ const Home = () => {
         <div className="container">
           <div className="label" style={{ marginBottom: '20px' }}>Why most operators stay stuck</div>
           <h2>Your demand is reactive. Your revenue reflects it.</h2>
-          
+
           <div className="grid-3" style={{ marginTop: '50px' }}>
             <div className="card">
               <CalendarX size={32} color="var(--color-amber-gold)" style={{ marginBottom: '20px' }} />
@@ -74,7 +95,7 @@ const Home = () => {
       <section className="section section-warm">
         <div className="container">
           <h2>What changes when demand is structured</h2>
-          
+
           <div className="grid-2" style={{ marginTop: '50px' }}>
             <div style={{ backgroundColor: 'var(--color-pure-white)', padding: '40px', borderRadius: '4px' }}>
               <h3 style={{ marginBottom: '30px' }}>Before Jetflow</h3>
@@ -93,7 +114,7 @@ const Home = () => {
                 ))}
               </ul>
             </div>
-            
+
             <div style={{ backgroundColor: 'var(--color-pure-white)', padding: '40px', borderRadius: '4px' }}>
               <h3 style={{ marginBottom: '30px' }}>With Jetflow</h3>
               <ul style={{ listStyle: 'none', padding: 0 }}>
@@ -119,7 +140,7 @@ const Home = () => {
       <section className="section">
         <div className="container">
           <h2 style={{ textAlign: 'center', marginBottom: '50px' }}>One system. Four components. Built around your operation.</h2>
-          
+
           <div className="grid-2" style={{ marginBottom: '50px' }}>
             {[
               { num: '01', title: 'Catalyst Engine', desc: 'Positions your operation in front of qualified executive decision-makers before they know they are looking.' },
@@ -137,7 +158,7 @@ const Home = () => {
               </div>
             ))}
           </div>
-          
+
           <div className="text-center">
             <Link to="/services" style={{ color: 'var(--color-near-black)', textDecoration: 'none', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
               See the full system <ArrowRight size={16} color="var(--color-amber-gold)" />
@@ -146,31 +167,11 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Section 6 — Social proof strip */}
-      <section className="section-navy" style={{ padding: '80px 5%', textAlign: 'center' }}>
-        <div className="container">
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '60px', flexWrap: 'wrap' }}>
-            <div>
-              <div style={{ fontFamily: 'var(--font-hero)', fontSize: '48px', color: 'var(--color-amber-gold)', marginBottom: '10px' }}>47%</div>
-              <div className="label">average increase in qualified inbound</div>
-            </div>
-            <div>
-              <div style={{ fontFamily: 'var(--font-hero)', fontSize: '48px', color: 'var(--color-amber-gold)', marginBottom: '10px' }}>60–90</div>
-              <div className="label">day deployment</div>
-            </div>
-            <div>
-              <div style={{ fontFamily: 'var(--font-hero)', fontSize: '48px', color: 'var(--color-amber-gold)', marginBottom: '10px' }}>2–10</div>
-              <div className="label">Built for aircraft operations</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Section 7 — Fit criteria */}
       <section className="section section-warm">
         <div className="container">
           <h2 style={{ textAlign: 'center', marginBottom: '60px' }}>This is built for a specific kind of operator</h2>
-          
+
           <div className="grid-2">
             <div style={{ padding: '40px', borderRight: '1px solid #ddd' }}>
               <h3 style={{ marginBottom: '30px' }}>Jetflow is right for you if:</h3>
@@ -188,7 +189,7 @@ const Home = () => {
                 ))}
               </ul>
             </div>
-            
+
             <div style={{ padding: '40px' }}>
               <h3 style={{ marginBottom: '30px' }}>Jetflow is not for you if:</h3>
               <ul style={{ listStyle: 'none', padding: 0 }}>
@@ -206,7 +207,7 @@ const Home = () => {
               </ul>
             </div>
           </div>
-          
+
           <div className="text-center" style={{ marginTop: '60px' }}>
             <p style={{ fontWeight: 500, color: 'var(--color-near-black)', marginBottom: '20px' }}>If this sounds like your operation — let us talk.</p>
             <Link to="/contact" className="btn btn-primary">Request a Strategy Briefing</Link>
