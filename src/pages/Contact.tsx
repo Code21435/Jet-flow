@@ -67,7 +67,7 @@ const Contact = () => {
                 </select>
               </div>
 
-              <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>Request My Strategy Briefing</button>
+              <button type="submit" className="btn btn-primary">Request My Strategy Briefing</button>
             </form>
 
             <p style={{ marginTop: '20px', fontSize: '14px', color: 'var(--color-slate-gray)', textAlign: 'center' }}>
