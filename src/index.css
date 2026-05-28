@@ -709,14 +709,20 @@ input:focus, select:focus, textarea:focus {
   }
 
   .hero-actions {
-    flex-direction: column;
+    flex-direction: row;
     align-items: stretch;
-    width: max-content;
-    gap: 12px;
+    width: 100%;
+    gap: 10px;
   }
 
   .hero-actions .btn {
-    width: 100%;
+    flex: 1;
+    width: auto;
+    padding: 12px 10px;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
 
   .hero-trust-strip {

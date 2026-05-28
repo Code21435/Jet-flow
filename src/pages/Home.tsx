@@ -31,7 +31,7 @@ const Home = () => {
           </h1>
 
           <p className="hero-subtext">
-            Inbound demand infrastructure for executive charter operators —
+            Inbound demand infrastructure for executive charter operators
             built to replace broker dependency with direct-client revenue that scales.
           </p>
 
