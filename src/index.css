@@ -703,13 +703,19 @@ input:focus, select:focus, textarea:focus {
     font-size: clamp(32px, 8vw, 48px) !important;
   }
 
+  .btn {
+    padding: 12px 24px;
+    font-size: 12px;
+  }
+
   .hero-actions {
     flex-direction: column;
-    width: 100%;
+    align-items: flex-start;
+    gap: 12px;
   }
 
   .hero-actions .btn {
-    width: 100%;
+    width: auto;
   }
 
   .hero-trust-strip {
