@@ -12,7 +12,7 @@ const Footer = () => {
             <Logo variant="light" size="md" />
           </div>
           <p style={{ fontSize: '14px', marginBottom: '20px', maxWidth: '280px' }}>
-            Inbound Demand Systems for Private Aviation Operators.
+            Inbound Demand Systems for Part 135 and executive charter operators.
           </p>
           <a
             href="#"
@@ -100,7 +100,7 @@ const Footer = () => {
         gap: '12px',
       }}>
         <div style={{ fontSize: '13px', color: 'rgba(255,255,255,0.35)' }}>
-          © 2026 Jetflow MEDIA. Burlington WA, USA.
+          © 2026 Jetflow MEDIA.
         </div>
         <div style={{ fontSize: '12px', color: 'rgba(255,255,255,0.25)' }}>
           Built for operators who refuse to leave demand to chance.

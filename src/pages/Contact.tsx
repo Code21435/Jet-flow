@@ -1,4 +1,3 @@
-
 const Contact = () => {
   return (
     <div className="page-content">
@@ -29,7 +28,12 @@ const Contact = () => {
               </div>
 
               <div style={{ marginBottom: '20px' }}>
-                <label style={{ display: 'block', marginBottom: '8px', fontWeight: 500, color: 'var(--color-near-black)' }}>Fleet size</label>
+                <label style={{ display: 'block', marginBottom: '8px', fontWeight: 500, color: 'var(--color-near-black)' }}>Website link</label>
+                <input type="text" placeholder="https://..." />
+              </div>
+
+              <div style={{ marginBottom: '20px' }}>
+                <label style={{ display: 'block', marginBottom: '8px', fontWeight: 500, color: 'var(--color-near-black)' }}>Number of aircraft</label>
                 <select>
                   <option value="" disabled selected>Select fleet size...</option>
                   <option value="1">1 aircraft</option>
@@ -40,7 +44,7 @@ const Contact = () => {
               </div>
 
               <div style={{ marginBottom: '20px' }}>
-                <label style={{ display: 'block', marginBottom: '8px', fontWeight: 500, color: 'var(--color-near-black)' }}>Primary market</label>
+                <label style={{ display: 'block', marginBottom: '8px', fontWeight: 500, color: 'var(--color-near-black)' }}>Primary charter markets</label>
                 <select>
                   <option value="" disabled selected>Select primary market...</option>
                   <option value="us-dom">US domestic</option>
@@ -52,18 +56,41 @@ const Contact = () => {
               </div>
 
               <div style={{ marginBottom: '20px' }}>
-                <label style={{ display: 'block', marginBottom: '8px', fontWeight: 500, color: 'var(--color-near-black)' }}>Current biggest pipeline challenge</label>
-                <textarea rows={3} placeholder="Briefly describe your main challenge..."></textarea>
+                <label style={{ display: 'block', marginBottom: '8px', fontWeight: 500, color: 'var(--color-near-black)' }}>Main demand source today</label>
+                <select>
+                  <option value="" disabled selected>Select main source...</option>
+                  <option value="brokers">Brokers</option>
+                  <option value="referrals">Referrals & Repeat</option>
+                  <option value="inbound">Direct Inbound (Website/Ads)</option>
+                  <option value="mixed">Mixed</option>
+                </select>
+              </div>
+
+              <div style={{ marginBottom: '20px' }}>
+                <label style={{ display: 'block', marginBottom: '8px', fontWeight: 500, color: 'var(--color-near-black)' }}>Biggest current issue</label>
+                <select>
+                  <option value="" disabled selected>Select biggest issue...</option>
+                  <option value="volume">Not enough volume</option>
+                  <option value="fit">Enquiries are not a good fit</option>
+                  <option value="speed">Sales cycle is too slow/requires too much clarification</option>
+                  <option value="consistency">Demand is inconsistent</option>
+                  <option value="broker-reliance">Over-reliance on brokers</option>
+                </select>
+              </div>
+
+              <div style={{ marginBottom: '20px' }}>
+                <label style={{ display: 'block', marginBottom: '8px', fontWeight: 500, color: 'var(--color-near-black)' }}>What should be different 90 days from now?</label>
+                <textarea rows={3} placeholder="Briefly describe your goals..."></textarea>
               </div>
 
               <div style={{ marginBottom: '30px' }}>
-                <label style={{ display: 'block', marginBottom: '8px', fontWeight: 500, color: 'var(--color-near-black)' }}>How did you hear about Jetflow?</label>
+                <label style={{ display: 'block', marginBottom: '8px', fontWeight: 500, color: 'var(--color-near-black)' }}>Timeline for improving inbound</label>
                 <select>
-                  <option value="" disabled selected>Select source...</option>
-                  <option value="linkedin">LinkedIn</option>
-                  <option value="referral">Referral</option>
-                  <option value="search">Search Engine</option>
-                  <option value="other">Other</option>
+                  <option value="" disabled selected>Select timeline...</option>
+                  <option value="immediate">Immediately (Active Project)</option>
+                  <option value="3-months">Next 3 Months</option>
+                  <option value="6-months">Next 6 Months</option>
+                  <option value="research">Just researching</option>
                 </select>
               </div>
 

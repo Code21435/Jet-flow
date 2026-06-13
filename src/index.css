@@ -78,7 +78,8 @@ p {
   font-size: clamp(15px, 2vw, 17px);
   font-weight: 400;
   color: var(--color-slate-gray);
-  line-height: 1.75;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
   margin-bottom: 1rem;
 }
 
