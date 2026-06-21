@@ -5,17 +5,19 @@ const Footer = () => {
   return (
     <footer className="section-navy" style={{ padding: '60px 5% 30px' }}>
       <div className="container footer-grid" style={{ marginBottom: '40px' }}>
-        
+
         {/* Left column */}
         <div>
           <div style={{ marginBottom: '16px' }}>
             <Logo variant="light" size="md" />
           </div>
           <p style={{ fontSize: '14px', marginBottom: '20px', maxWidth: '280px' }}>
-            Inbound Demand Systems for Part 135 and executive charter operators.
+            Demand systems for executive charter operators who are ready to move beyond reactive inbound.
           </p>
           <a
-            href="#"
+            href="https://www.linkedin.com/company/jetflow-media"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               color: 'rgba(255,255,255,0.7)',
               textDecoration: 'none',
@@ -47,7 +49,7 @@ const Footer = () => {
           {[
             { to: '/services', label: 'Services' },
             { to: '/how-it-works', label: 'How It Works' },
-            { to: '/results', label: 'Results' },
+            { to: '/outcomes', label: 'Outcomes' },
             { to: '/about', label: 'About' },
             { to: '/contact', label: 'Contact' },
           ].map((link) => (
@@ -83,9 +85,19 @@ const Footer = () => {
           <Link to="/contact" className="btn btn-primary" style={{ padding: '12px 24px', fontSize: '13px' }}>
             Request a Briefing
           </Link>
-          <div style={{ color: 'rgba(255, 255, 255, 0.5)', fontSize: '14px' }}>
+          <a
+            href="mailto:hello@jetflowmedia.com"
+            style={{
+              color: 'rgba(255, 255, 255, 0.5)',
+              fontSize: '14px',
+              textDecoration: 'none',
+              transition: 'color 0.3s ease',
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.color = '#C9923A')}
+            onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.5)')}
+          >
             hello@jetflowmedia.com
-          </div>
+          </a>
         </div>
 
       </div>
@@ -103,7 +115,7 @@ const Footer = () => {
           © 2026 Jetflow MEDIA.
         </div>
         <div style={{ fontSize: '12px', color: 'rgba(255,255,255,0.25)' }}>
-          Built for operators who refuse to leave demand to chance.
+          For operators who are ready to build what comes next.
         </div>
       </div>
     </footer>

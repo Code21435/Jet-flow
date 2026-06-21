@@ -1,16 +1,18 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollReveal from './components/ScrollReveal';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import HowItWorks from './pages/HowItWorks';
-import Results from './pages/Results';
+import Outcomes from './pages/Outcomes';
 import About from './pages/About';
 import Contact from './pages/Contact';
 
 function App() {
   return (
     <Router>
+      <ScrollReveal />
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <Navbar />
         <main style={{ flex: 1 }}>
@@ -18,7 +20,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
             <Route path="/how-it-works" element={<HowItWorks />} />
-            <Route path="/results" element={<Results />} />
+            <Route path="/outcomes" element={<Outcomes />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

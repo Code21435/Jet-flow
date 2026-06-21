@@ -5,7 +5,7 @@ interface LogoProps {
 }
 
 const Logo = ({ variant = 'light', size = 'md', showIcon = true }: LogoProps) => {
-  const textColor = variant === 'light' ? '#FFFFFF' : '#0D1B2A';
+  const textColor = variant === 'light' ? '#FFFFFF' : '#004741';
   const accentColor = '#C9923A';
 
   const sizes = {
@@ -34,7 +34,7 @@ const Logo = ({ variant = 'light', size = 'md', showIcon = true }: LogoProps) =>
           aria-hidden="true"
         >
           {/* Abstract jet silhouette — angular, minimal, premium */}
-          <rect width="48" height="48" rx="6" fill={variant === 'light' ? 'rgba(255,255,255,0.08)' : 'rgba(13,27,42,0.06)'} />
+          <rect width="48" height="48" rx="6" fill={variant === 'light' ? 'rgba(255,255,255,0.08)' : 'rgba(0,71,65,0.06)'} />
           {/* Main jet body — sleek forward-pointing form */}
           <path
             d="M8 30L24 10L40 30L32 28L24 38L16 28L8 30Z"
@@ -44,12 +44,12 @@ const Logo = ({ variant = 'light', size = 'md', showIcon = true }: LogoProps) =>
           {/* Inner highlight */}
           <path
             d="M24 16L32 28L24 34L16 28L24 16Z"
-            fill={variant === 'light' ? 'rgba(255,255,255,0.2)' : 'rgba(13,27,42,0.15)'}
+            fill={variant === 'light' ? 'rgba(255,255,255,0.2)' : 'rgba(0,71,65,0.15)'}
           />
           {/* Accent line */}
           <line
             x1="18" y1="26" x2="30" y2="26"
-            stroke={variant === 'light' ? 'rgba(255,255,255,0.4)' : 'rgba(13,27,42,0.3)'}
+            stroke={variant === 'light' ? 'rgba(255,255,255,0.4)' : 'rgba(0,71,65,0.3)'}
             strokeWidth="1"
           />
         </svg>

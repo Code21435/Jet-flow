@@ -6,7 +6,7 @@ const navItems = [
   { path: '/', label: 'Home' },
   { path: '/services', label: 'Services' },
   { path: '/how-it-works', label: 'How It Works' },
-  { path: '/results', label: 'Results' },
+  { path: '/outcomes', label: 'Outcomes' },
   { path: '/about', label: 'About' },
   { path: '/contact', label: 'Contact' },
 ];
@@ -24,12 +24,10 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => {
     setMobileOpen(false);
   }, [location.pathname]);
 
-  // Prevent body scroll when mobile menu is open
   useEffect(() => {
     if (mobileOpen) {
       document.body.style.overflow = 'hidden';
